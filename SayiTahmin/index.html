@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayi Tahmin Oyunu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="mx-auto text-center">
+            <h1 id="mesaj">Sayı Tahmin Oyunu</h1>
+            <hr />
+            <div class="col-md-6 mx-auto">
+              <input type="number" class="form-control" id="tahmin" />
+              <button class="btn btn-primary" id="btnTahmin">Tahmin Et</button>
+            </div>
+            
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-3 mx-auto">
+            <div class="card">
+              <div class="card-header bg-success">
+                <h2 class="card-title text-center text-white">Seviye</h2>
+              </div>
+              <div class="card-body">
+                <h1 class="text-center" id="seviye"></h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mx-auto">
+            <div class="card">
+              <div class="card-header bg-warning">
+                <h2 class="card-title text-center">Tahmin Hak</h2>
+              </div>
+              <div class="card-body">
+                <h1 class="text-center" id="tahminHak"></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row mt-3">
+          <div class="col-md-4 mx-auto">
+            <div class="card">
+              <div class="card-header " id="timerHeader">
+                  <h2 class="text-center">Geri Sayım</h2>
+              </div>
+              <div class="card-body" id="timer">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Bilinen Sayı</th>
+                <th>Seviye</th>
+                <th>Hak</th>
+              </tr>
+            </thead>
+            <tbody id="tahminBody">
+              
+              
+            </tbody>
+          </table>
+        </div>
+    <script src="/js/SayiTahmin.js"></script>
+</body>
+</html>
